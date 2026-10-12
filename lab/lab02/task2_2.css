@@ -1,0 +1,18 @@
+*{box-sizing:border-box}
+body{margin:0;padding:1rem;font-family:system-ui,Arial,sans-serif;background:#111;color:#eee}
+h1{text-align:center}
+.grid{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
+.photo{flex:1 1 220px;max-width:320px;height:200px;margin:0;border-radius:10px;position:relative;overflow:hidden;
+  transition:transform .3s ease,box-shadow .3s ease;cursor:pointer}
+.photo:hover{transform:scale(1.06) rotate(1deg);box-shadow:0 10px 25px rgba(0,0,0,.6);z-index:2}
+.photo figcaption{position:absolute;bottom:0;left:0;right:0;padding:.5rem;background:rgba(0,0,0,.5);text-align:center}
+.p1{background:linear-gradient(135deg,#ff7e5f,#feb47b)}
+.p2{background:linear-gradient(135deg,#2193b0,#6dd5ed)}
+.p3{background:linear-gradient(135deg,#134e5e,#71b280)}
+.p4{background:linear-gradient(135deg,#f6d365,#fda085)}
+.p5{background:linear-gradient(135deg,#0f2027,#2c5364,#7f00ff)}
+.p6{background:linear-gradient(135deg,#a8e063,#56ab2f)}
+.p7{background:linear-gradient(135deg,#614385,#516395)}
+.p8{background:linear-gradient(135deg,#e0eafc,#cfdef3);color:#000}
+.p8 figcaption{color:#fff}
+@media (max-width:600px){.photo{flex-basis:100%;max-width:100%}}

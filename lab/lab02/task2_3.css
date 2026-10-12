@@ -1,0 +1,15 @@
+*{box-sizing:border-box}
+body{font-family:system-ui,Arial,sans-serif;background:#eef1f6;margin:0;padding:2rem 1rem}
+.app{max-width:480px;margin:0 auto;background:#fff;padding:1.5rem;border-radius:10px;box-shadow:0 4px 14px rgba(0,0,0,.1)}
+.row{display:flex;gap:.5rem}
+input{flex:1;padding:.6rem;border:2px solid #ccd;border-radius:6px;font-size:1rem}
+input.invalid{border-color:#d33}
+button{background:#2563eb;color:#fff;border:0;border-radius:6px;padding:.6rem 1rem;cursor:pointer}
+button:hover{filter:brightness(1.1)}
+.error{color:#d33;margin:.5rem 0 0;font-size:.9rem}
+ul{list-style:none;padding:0;margin:1rem 0 0}
+li{display:flex;align-items:center;gap:.6rem;padding:.6rem;border-bottom:1px solid #eee}
+li span{flex:1;word-break:break-word}
+li.done span{text-decoration:line-through;color:#999}
+li button.del{background:#d33;padding:.3rem .6rem}
+.count{color:#666;font-size:.9rem}
